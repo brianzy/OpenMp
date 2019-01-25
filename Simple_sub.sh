@@ -10,6 +10,6 @@ module load gcc/4
 for v in $(seq 1 32)
 do
 export OMP_NUM_THREADS=$v
-./simple_for_loop
+echo 4000|./simple_for_loop
 done
 
